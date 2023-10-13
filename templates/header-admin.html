@@ -1,0 +1,58 @@
+<!--<nav class="navbar navbar-expand-lg navbar-dark bg-dark">-->
+<!--  <div class="container-fluid">-->
+<!--    <a class="navbar-brand" href="/admins/dashboard">Online Shopping</a>-->
+<!--    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--      <span class="navbar-toggler-icon"></span>-->
+<!--    </button>-->
+<!--    <div class="collapse navbar-collapse" id="navbarSupportedContent">-->
+<!--      <ul class="navbar-nav me-auto mb-2 mb-lg-0">-->
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link {{activate_category}}"-->
+<!--             aria-current="page" href="/clothes/get_category">Category</a>-->
+<!--        </li>-->
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link {{activate_clothes}}" href="/clothes/get_clothes">Clothes</a>-->
+<!--        </li>-->
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link" href="/password_change">Setting</a>-->
+<!--          {% if user.is_authenticated %}-->
+<!--        </li>-->
+<!--          <li class="nav-item">-->
+<!--          <a class="nav-link" href="/logout">Logout</a>-->
+<!--        </li>-->
+<!--        {% else %}-->
+<!--          <li class="nav-item">-->
+<!--          <a class="nav-link {{activate_login}}" href="/login">Login</a>-->
+<!--        </li>-->
+<!--          <li class="nav-item">-->
+<!--          <a class="nav-link {{activate_register}}" href="/register">Register</a>-->
+<!--        </li>-->
+<!--        {% endif %}-->
+
+<!--      </ul>-->
+
+<!--    </div>-->
+<!--  </div>-->
+<!--</nav>-->
+
+<a class="btn btn-primary m-2" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" style="background:black">
+ main Menu
+</a>
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel"style="background:black;color:white">
+  <div class="offcanvas-header"style="background:black;color:white">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Dashboard</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"style="background:white;color:black"></button>
+  </div>
+  <div class="offcanvas-body" style="background:black;color:white">
+    <ul class="list-unstyled">
+     <li><a class="dropdown-item" href="/admins/"style="background:black;color:white">Admin Dashboard</a></li>
+        <li><a class="dropdown-item" href="/clothes/get_category"style="background:black;color:white">Category</a></li>
+           <li><a class="dropdown-item" href="/clothes/get_clothes"style="background:black;color:white">Item</a></li>
+         <li><a class="dropdown-item" href="/admins/users"style="background:black;color:white">Users</a></li>
+         <li><a class="dropdown-item" href="/admins/admins"style="background:black;color:white">Admins</a></li>
+        <li><a class="dropdown-item" href="/password_change"style="background:black;color:white">Settings</a></li>
+        <li><a class="dropdown-item" href="/logout"style="background:black;color:white">Logout</a></li>
+
+   </ul>
+  </div>
+</div>

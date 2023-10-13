@@ -1,0 +1,57 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-black">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/clothes/homepage">SOD E-Commerce</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      
+       
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link {{activate_menu}}" href="/clothes/menu">Menu</a> </li>-->
+          {% if user.is_authenticated %}
+          <li class="nav-item">
+            <a class="nav-link {{activate_clothe_user}}" href="/clothes/get_clothe_user">Items</a>
+          </li>
+         <li class="nav-item">
+          <a class="nav-link {{activate_my_cart}}" href="/clothes/mycart">My Cart🛒</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link {{activate_myorder}}" href="/clothes/my_order">My Orders</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">welcome,{{user.username}}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/clothes/about">About Us</a>
+      </li>
+      <li class="nav-item">
+        <span><a class="nav-link" href="/logout">Logout</a></span>
+      </li>
+     
+       
+      {% else %}
+      <div class="dropdown" >
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false" style="background:black">
+            <i class="fas fa-user"></i>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="background:black">
+            <li><a class="dropdown-item" href="/login" style="background:black;color:white">login</a></li>
+            <li><a class="dropdown-item" href="/register"style="background:black;color:white">Register</a></li>
+        </ul>
+    </div>
+    
+    {% endif %}
+      <form  method="GET" action="/clothes/search" class="d-flex">
+        <input name="z" class="form-control me-2 my-2, my-lg-0, me-sm-0, my-sm-0" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-light" type="submit">Search</button>
+    </form>
+
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
