@@ -1,0 +1,88 @@
+{% extends 'layout-admin.html' %}
+{% load static %}
+
+{% block title %}
+<title>Homepage</title>
+{% endblock title %}
+
+{% block main_content %}
+<h1>Admin Dashboard</h1>
+
+<style>
+  .card-body a{
+    text-decoration:none;
+    color:#fff;
+    }
+
+    .card-body a:hover{
+    color:orange;
+    }
+
+</style>
+<div class="container">
+    {% include 'messages.html' %}
+    <div class="row">
+        <div class="col">
+            <div class="card text-white bg-primary mb-3" style="max-width: 35rem;">
+                <div class="card-header text-center">Total Items</div>
+                <div class="card-body">
+                    <a href="/clothes/get_clothes">
+                        <h1 class="card-title text-center">{{clothes}}</h1></a>
+
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card text-white bg-info mb-3" style="max-width: 35rem;">
+                <div class="card-header text-center">Total Customer</div>
+                <div class="card-body">
+                    <a href="/clothes/get_customer"><h1 class="card-title text-center">{{customer}}</h1>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="card text-white bg-warning mb-3" style="max-width: 35rem;">
+                <div class="card-header text-center">order Items</div>
+                <div class="card-body">
+                    <a href="/clothes/order"><h1 class="card-title text-center">{{order}}</h1>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card text-white bg-success mb-3" style="max-width: 35rem;">
+                <div class="card-header text-center">Total Users</div>
+                <div class="card-body">
+                    <a href="/admins/users"><h1 class="card-title text-center">{{userc}}</h1></a>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+
+
+        <div class="col">
+            <div class="card text-white bg-danger mb-3" style="max-width: 35rem;">
+                <div class="card-header text-center">Total Admins</div>
+                <div class="card-body">
+                    <a href="/admins/admins"> <h1 class="card-title text-center">{{admin}}</h1>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    body {
+    background-color: #212121;
+    color: white
+    }
+ </style>
+{% endblock %}
