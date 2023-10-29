@@ -1,0 +1,22 @@
+span.help-block{color:red;}
+span.help-block{
+   color:red;
+   font-size:12px;
+}
+
+.myForm Label.control-label, .myForm div{width:100%}
+
+p.help-block, .myForm ul li{font-size:12px}
+.footer{
+   grid-area: footer;
+   background-color: #203040;
+   color: #ffffff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .navbar-expand-lg .navbar-nav {
+   -ms-flex-direction: row;
+   flex-direction: row;
+}
