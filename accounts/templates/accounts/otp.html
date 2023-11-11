@@ -1,0 +1,16 @@
+<div>
+    <h2>OTP Verification</h2>
+    <p>Please enter the OTP sent to your registered email address or phone number.</p>
+
+    <form method="post" action="{% url 'verify_otp' %}">
+        {% csrf_token %}
+        
+        <!-- Add fields as needed, e.g., one-time-password input -->
+        <label for="otp">Enter OTP:</label>
+        <input type="text" id="otp" name="otp" required>
+        
+        <button type="submit">Verify OTP</button>
+    </form>
+</div>
+</body>
+</html>
