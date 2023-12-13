@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+{% load bootstrap %}
+{% block title %}
+<title>Search</title>
+{% endblock%}
+
+{% block main_content %}
+<div class="container">
+    <div class="row justify-content-around">
+        {% include 'messages.html' %}
+        {% for i in clothes %}
+        <div class="card col-md-3 m-3">
+            <img src="/{{i.clothes_image}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{i.clothes_name}}</h5>
+                <p class="card-text">Rs. {{i.clothes_price}}</p>
+                <p class="card-text">{{i.category.category_name}}</p>
+                <a href="/clothes/add_to_cart/{{i.id}}" class="btn btn-primary"
+                onclick="return confirm('Are you sure you want to add this item to cart?">Add to Cart</a>
+            </div>
+        </div>
+
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,45 @@
+{% extends 'layout-admin.html' %}
+{% block title %}
+<title>All Item</title>
+{% endblock%}
+
+{% block main_content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-10 offset-md-1">
+            <h1 class="text-center">All Item</h1>
+            {% include 'messages.html' %}
+            <div class="card py-2 px-2">
+                <a class="btn btn-primary btn-sm ms-auto"
+                href="/clothes/clothes_form"
+                >Add New Item</a>
+                <table class="table-striped">
+                    <tr>
+                        <th>Item Name</th>
+                        <th>Price</th>
+                        <th>Category</th>
+                        <th>Descreption</th>
+                        <th>Image</th>
+                        <th>Actions</th>
+                    </tr>
+                    {% for i in clothes %}
+                    <tr>
+                        <td> {{ i.clothes_name }}</td>
+                        <td> {{ i.clothes_price }}</td>
+                        <td> {{ i.category.category_name }}</td>
+                        <td> {{ i.clothes_description }}</td>
+                        <td><img src="/{{i.clothes_image}}" width="200"> </td>
+                        <td><a class="btn btn-primary btn-sm" href="/clothes/update_clothes/{{i.id}}">Edit</a> &nbsp;
+                            <a class="btn btn-danger btn-sm"
+                               href="/clothes/delete_clothes/{{i.id}}"
+                               onclick="return confirm('Are you sure want to delete this clothes?')" >Delete</a></td>
+                    </tr>
+                    {% endfor %}
+
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

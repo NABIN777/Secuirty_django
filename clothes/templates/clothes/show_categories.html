@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block title %}
+<title>Category</title>
+{% endblock title %}
+
+{% block main_content %}
+<h1>All Categories</h1>
+<div class="container">
+    <div class="row justify-content-around">
+        {% for i in categories %}
+        <div class="card col-md-3">
+<!--            <img src="/{{i.food_image}}" class="card-img-top" alt="...">-->
+            <div class="card-body">
+                <h5 class="card-title">{{i.category_name}}</h5>
+                <p class="card-text">{{i.category_description}}</p>
+                <a href="#" class="btn btn-primary">View Details</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock main_content %}

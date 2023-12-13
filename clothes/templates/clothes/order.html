@@ -1,0 +1,51 @@
+{% extends 'layout-admin.html' %}
+{% block title %}
+  <title>All Item</title>
+{% endblock%}
+{% block main_content %}
+<main class="bg-dark">
+<div class="container">
+</div>
+<div class="container text-white main-container">
+        <table class="table table-hover table-dark">
+          <thead>
+              <tr>
+                <th scope="col"> SN </th>
+                <th scope="col">Prodcut Image</th>
+                <th scope="col">Prodcut Name</th>
+                <th scope="col">Customer Info</th>
+                <th scope="col">contact</th>
+                <th scope="col">Address</th>
+                <th scope="col">quantity</th>
+                <th scope="col">Delivery</th>
+              </tr>
+            </thead>
+            <tbody>
+                {% for orders in order %}
+
+               
+
+              <tr>
+                <th scope="row">1</th>
+                <td ><img src="/{{orders.clothe.clothes_image}}" alt="" srcset="" width="300" height="200"></td>
+                <td>{{orders.clothe.clothes_name}}</td>
+                <td>
+                  <ul>
+                    <li style="list-style: none;">username:{{orders.user}}</li>
+
+                  </ul>
+                </td>
+                <td>{{orders.contact_no}}</td>
+                <td>{{orders.contact_address}}</td>
+                <td>{{orders.quantity}}</td>
+                <td><button style="background:green">Delivered</button></td>
+              </tr>
+                                {% endfor %}
+            
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            {% endblock %}            

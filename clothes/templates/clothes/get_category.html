@@ -1,0 +1,47 @@
+{% extends 'layout-admin.html' %}
+{% block title %}
+<title>All Categories</title>
+{% endblock%}
+
+{% block main_content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-10 offset-md-1">
+            <h1 class="text-center">All Categories</h1>
+            {% include 'messages.html' %}
+            <div class="card py-2 px-2">
+                <a class="btn btn-primary btn-sm ms-auto"
+                href="/clothes/category_form"
+                >Add New Category</a>
+                <table class="table-striped"style=color:blue>
+                    <tr>
+                        <th>Category Name</th>
+                        <th>Description</th>
+                        <th>Date</th>
+                        <th>Actions</th>
+                    </tr>
+                    {% for i in categories %}
+                    <tr>
+                        <td> {{ i.category_name }}</td>
+                        <td> {{ i.category_description }}</td>
+                        <td> {{ i.created_date }}</td>
+                        <td><a class="btn btn-primary btn-sm" href="/clothes/update_category/{{i.id}}">Edit</a> &nbsp;
+                            <a class="btn btn-danger btn-sm"
+                               href="/clothes/delete_category/{{i.id}}"
+                               onclick="return confirm('Are you sure want to delete this category?')" >Delete</a></td>
+                    </tr>
+                    {% endfor %}
+
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    body {
+    background-color: #212121;
+    color: white
+    }
+ </style>
+
+{% endblock %}

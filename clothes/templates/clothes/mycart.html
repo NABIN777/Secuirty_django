@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+{% block title %}
+<title> Cart </title>
+{% endblock%}
+{% block main_content %}
+<div class="container mb-5">
+        <div class="col-md-10 offset-md-1">
+            <h1 class="text-center">My Cart</h1>
+            {% include 'messages.html' %}
+            <div class="card py-2 px-2 pb-5">
+                <table class="table-striped">
+                    <tr>
+                        <th>Item Name</th>
+                        <th>Item Price</th>
+                        <th>Date Added</th>
+                        <th>Actions</th>
+                    </tr>
+                    {% for i in items %}
+                    <tr>
+                        <td> {{ i.clothe.clothes_name }}</td>
+                        <td> {{ i.clothe.clothes_price }}</td>
+                        <td> {{ i.created_date }}</td>
+                        <td><a class="btn btn-primary btn-sm" href="/clothes/remove_cart_item/{{i.id}}">Remove</a> &nbsp;
+                            <a class="btn btn-danger btn-sm"
+                               href="/clothes/order_form/{{i.clothe.id}}/{{i.id}}"
+                               onclick="return confirm('Are you sure want to order this Item?')" >Order</a></td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+    </div>
+</div>
+{% endblock %}
