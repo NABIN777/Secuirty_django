@@ -1,0 +1,66 @@
+
+User nabin logged in.
+"POST /login HTTP/1.1" 200 6175
+"POST /login HTTP/1.1" 302 0
+"GET /clothes/homepage HTTP/1.1" 200 8219
+"GET /static/images/ch.PNG HTTP/1.1" 304 0
+"GET /clothes/about HTTP/1.1" 200 8093
+"GET /static/image/nike.png HTTP/1.1" 404 1801
+"GET /static/imagess/ad.png HTTP/1.1" 404 1801
+"GET /static/imagess/puma.png HTTP/1.1" 404 1807
+"GET /logout HTTP/1.1" 302 0
+"GET /login HTTP/1.1" 200 5897
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 8167
+"GET /login HTTP/1.1" 200 5897
+User nabin logged in.
+user nabin is in homepage
+user nabin search
+user searchD:\individual project lll\E-commerce\assignment\online_shopping\clothes\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\individual project lll\E-commerce\assignment\online_shopping\clothes\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /clothes/search?z=jersey HTTP/1.1" 200 5075
+D:\individual project lll\E-commerce\assignment\online_shopping\clothes\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /login HTTP/1.1" 200 5897
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 8167
+"GET /static/css/style.css HTTP/1.1" 200 440
+"GET /static/css/navigation.css HTTP/1.1" 200 756
+"GET /static/images/cr.jpg HTTP/1.1" 200 170809
+"GET /static/images/sw.jpg HTTP/1.1" 200 91750
+"GET /static/images/golf.jpg HTTP/1.1" 200 52642
+"GET /static/images/offer2.jpg HTTP/1.1" 200 860989
+"GET /static/images/offer1.PNG HTTP/1.1" 200 1099658
+"GET /static/images/offer.PNG HTTP/1.1" 200 2453222
+"GET /login HTTP/1.1" 200 5897
+"POST /login HTTP/1.1" 200 6128
+"POST /login HTTP/1.1" 200 6128
+User niraj logged in.
+"POST /login HTTP/1.1" 302 0
+"GET /admins HTTP/1.1" 301 0
+"GET /admins/ HTTP/1.1" 200 6984
+"GET /logout HTTP/1.1" 302 0
+"GET /login HTTP/1.1" 200 5897
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 8167
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2998
+"GET /login HTTP/1.1" 200 5897
+User niraj logged in.
+"POST /login HTTP/1.1" 302 0
+"GET /admins HTTP/1.1" 301 0
+"GET /admins/ HTTP/1.1" 200 6984
+"GET /admins/ HTTP/1.1" 200 6984
+"GET /admins/ HTTP/1.1" 200 6984
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 8167
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2998
+"GET /login HTTP/1.1" 200 5897
+User nabin logged in.
+"POST /login HTTP/1.1" 200 6175
+"POST /login HTTP/1.1" 302 0
+"GET /clothes/homepage HTTP/1.1" 200 8219
+"GET /static/images/ch.PNG HTTP/1.1" 200 2596930
