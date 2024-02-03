@@ -36,16 +36,16 @@ class Clothes(models.Model):
     id = models.IntegerField(primary_key=True)  # Original ID field as an integer
     hashed_id = models.CharField(max_length=64, blank=True, null=True)  # Hashed ID field
 
-    def save(self, *args, **kwargs):
-        # Hash the id before saving if it exists
-        if self.id:
-            id_to_hash = str(self.id)
-            hashed_id = hashlib.sha256(id_to_hash.encode()).hexdigest()
-            self.hashed_id = hashed_id
-        super().save(*args, **kwargs)
+    # def save(self, *args, **kwargs):
+    #     # Hash the id before saving if it exists
+    #     if self.id:
+    #         id_to_hash = str(self.id)
+    #         hashed_id = hashlib.sha256(id_to_hash.encode()).hexdigest()
+    #         self.hashed_id = hashed_id
+    #     super().save(*args, **kwargs)
 
-    def __str__(self):
-        return self.clothes_name
+    # def __str__(self):
+    #     return self.clothes_name
 
 class Cart(models.Model):
     clothe = models.ForeignKey(Clothes, on_delete=models.CASCADE)
@@ -86,16 +86,8 @@ class Order(models.Model):
     status = models.CharField(max_length=200, choices=STATUS, null=True)
     
     # Hashed contact_no
-    contact_no_hashed = models.CharField(max_length=64, blank=True, null=True)
+    # contact = models.CharField(max_length=64, blank=True, null=True)
     
-    contact_no = models.CharField(validators=[MinLengthValidator(9), MaxLengthValidator(10)], null=True, max_length=10)
+    contact_no = models.CharField(validators=[MinLengthValidator(9), MaxLengthValidator(10)], null=True, max_length=64)
     contact_address = models.CharField(max_length=200, null=True)
     created_date = models.DateTimeField(auto_now_add=True, null=True)
-
-    def save(self, *args, **kwargs):
-        # Hash the contact_no before saving
-        if self.contact_no:
-            hashed_contact_no = hashlib.sha256(self.contact_no.encode()).hexdigest()
-            self.contact_no_hashed = hashed_contact_no
-
-        super().save(*args, **kwargs)

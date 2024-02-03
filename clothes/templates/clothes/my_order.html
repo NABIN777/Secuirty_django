@@ -19,7 +19,7 @@
                             <th>Quantity</th>
                             <th>Total Price</th>
                             <th>Ordered Date</th>
-                            <th>Contact No</th>
+                            {% comment %} <th>Contact No</th> {% endcomment %}
                             <th>Delivery Location</th>
                             <th>Status</th>
                         </tr>
@@ -32,9 +32,10 @@
                             <td>{{item.quantity}}</td>
                             <td>{{item.total_price}}</td>
                             <td>{{item.created_date}}</td>
-                            <td>{{item.contact_no}}</td>
+                            {% comment %} <td>{{item.original_contact_no}}</td> {% endcomment %}
                             <td>{{item.contact_address}}</td>
                             <td>{{item.status}}</td>
+
                                                     </tr>
                         {% endfor %}
                         </tbody>

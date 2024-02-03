@@ -1,3 +1,4 @@
+import hashlib
 import logging
 import os
 
@@ -247,35 +248,43 @@ def remove_cart_item(request, cart_id):
 
 @login_required
 @user_only
-def order_form(request, clothe_id,cart_id):
+def order_form(request, clothe_id, cart_id):
     user = request.user
     clothe = Clothes.objects.get(id=clothe_id)
     cart_item = Cart.objects.get(id=cart_id)
+
     if request.method == 'POST':
         form = OrderForm(request.POST)
         if form.is_valid():
-            quantity = request.POST.get('quantity')
+            quantity = form.cleaned_data['quantity']
             price = clothe.clothes_price
-            total_price = int(quantity)*int(price)
-            contact_no = request.POST.get('contact_no')
-            contact_address = request.POST.get('contact_address')
-            order = Order.objects.create(clothe=clothe,
-                                         user =user,
-                                         quantity=quantity,
-                                         total_price=total_price,
-                                         contact_no = contact_no,
-                                         contact_address =contact_address,
-                                         status="Pending"
+            total_price = int(quantity) * int(price)
+            contact_no = form.cleaned_data['contact_no']
+            contact_address = form.cleaned_data['contact_address']
+
+            # Hash the contact_no field
+            hashed_contact_no = hashlib.sha256(str(contact_no).encode()).hexdigest()
+
+            order = Order.objects.create(
+                clothe=clothe,
+                user=user,
+                quantity=quantity,
+                total_price=total_price,
+                contact_no=hashed_contact_no,
+                contact_address=contact_address,
+                status="Pending"
             )
+
             if order:
                 messages.add_message(request, messages.SUCCESS, 'Item ordered')
                 cart_item.delete()
-                return redirect('/clothes/my_order')
+                return redirect('/clothes/my_order')  # Assuming you have a 'my_order' URL pattern
         else:
-            messages.add_message(request, messages.ERROR, 'Something went wrong')
-            return render(request, 'clothes/order_form.html', {'order_form':form})
+            messages.add_message(request, messages.ERROR, 'Form validation failed. Please check the provided information.')
+            return render(request, 'clothes/order_form.html', {'order_form': form})
+
     context = {
-        'order_form': OrderForm
+        'order_form': OrderForm(),
     }
     return render(request, 'clothes/order_form.html', context)
 

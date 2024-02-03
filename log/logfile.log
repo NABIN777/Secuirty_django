@@ -64,3 +64,1971 @@ User nabin logged in.
 "POST /login HTTP/1.1" 302 0
 "GET /clothes/homepage HTTP/1.1" 200 8219
 "GET /static/images/ch.PNG HTTP/1.1" 200 2596930
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 8167
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2998
+"GET /login HTTP/1.1" 200 5897
+"POST /login HTTP/1.1" 200 6128
+"POST /login HTTP/1.1" 200 6128
+User nabin logged in.
+"POST /login HTTP/1.1" 200 6175
+"GET /clothes/get_clothe_user HTTP/1.1" 200 5210
+"GET /static/uploads/F1.jpg HTTP/1.1" 200 62899
+"GET /clothes/mycart HTTP/1.1" 200 5591
+Internal Server Error: /clothes/my_order
+Traceback (most recent call last):
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'clothes_order.contact_no_hashed' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\accounts\auth.py", line 29, in wrapper_function
+    return view_function(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\clothes\views.py", line 292, in my_order
+    return render(request, 'clothes/my_order.html', context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\defaulttags.py", line 197, in render
+    len_values = len(values)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1926, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'clothes_order.contact_no_hashed' in 'field list'")
+"GET /clothes/my_order HTTP/1.1" 500 247953
+Internal Server Error: /clothes/my_order
+Traceback (most recent call last):
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'clothes_order.contact_no_hashed' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\accounts\auth.py", line 29, in wrapper_function
+    return view_function(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\clothes\views.py", line 292, in my_order
+    return render(request, 'clothes/my_order.html', context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\defaulttags.py", line 197, in render
+    len_values = len(values)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1926, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'clothes_order.contact_no_hashed' in 'field list'")
+"GET /clothes/my_order HTTP/1.1" 500 247953
+"GET /clothes/about HTTP/1.1" 200 8093
+"GET /static/images/nike.png HTTP/1.1" 200 844
+"GET /static/images/ad.png HTTP/1.1" 200 1918
+"GET /static/imagess/ad.png HTTP/1.1" 404 1801
+"GET /static/imagess/puma.png HTTP/1.1" 404 1807
+"GET /static/image/nike.png HTTP/1.1" 404 1801
+"GET /clothes/get_clothe_user HTTP/1.1" 200 5210
+"GET /clothes/mycart HTTP/1.1" 200 5591
+Internal Server Error: /clothes/my_order
+Traceback (most recent call last):
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'clothes_order.contact_no_hashed' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\accounts\auth.py", line 29, in wrapper_function
+    return view_function(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\clothes\views.py", line 292, in my_order
+    return render(request, 'clothes/my_order.html', context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\defaulttags.py", line 197, in render
+    len_values = len(values)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1926, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'clothes_order.contact_no_hashed' in 'field list'")
+"GET /clothes/my_order HTTP/1.1" 500 247953
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 8167
+"GET /login HTTP/1.1" 200 5897
+User nabin logged in.
+"POST /login HTTP/1.1" 200 6175
+"GET /clothes/mycart HTTP/1.1" 200 5591
+Internal Server Error: /clothes/my_order
+Traceback (most recent call last):
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'clothes_order.contact_no_hashed' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\accounts\auth.py", line 29, in wrapper_function
+    return view_function(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\clothes\views.py", line 292, in my_order
+    return render(request, 'clothes/my_order.html', context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\defaulttags.py", line 197, in render
+    len_values = len(values)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1926, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'clothes_order.contact_no_hashed' in 'field list'")
+"GET /clothes/my_order HTTP/1.1" 500 247953
+D:\individual project lll\E-commerce\assignment\online_shopping\clothes\models.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /clothes/my_order
+Traceback (most recent call last):
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'clothes_order.contact_no_hashed' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\accounts\auth.py", line 29, in wrapper_function
+    return view_function(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\clothes\views.py", line 292, in my_order
+    return render(request, 'clothes/my_order.html', context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\defaulttags.py", line 197, in render
+    len_values = len(values)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1926, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'clothes_order.contact_no_hashed' in 'field list'")
+"GET /clothes/my_order HTTP/1.1" 500 248090
+Internal Server Error: /clothes/my_order
+Traceback (most recent call last):
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'clothes_order.contact_no_hashed' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\accounts\auth.py", line 29, in wrapper_function
+    return view_function(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\clothes\views.py", line 292, in my_order
+    return render(request, 'clothes/my_order.html', context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\defaulttags.py", line 197, in render
+    len_values = len(values)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1926, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'clothes_order.contact_no_hashed' in 'field list'")
+"GET /clothes/my_order HTTP/1.1" 500 247953
+Internal Server Error: /clothes/my_order
+Traceback (most recent call last):
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'clothes_order.contact_no_hashed' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\accounts\auth.py", line 29, in wrapper_function
+    return view_function(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\clothes\views.py", line 292, in my_order
+    return render(request, 'clothes/my_order.html', context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\defaulttags.py", line 197, in render
+    len_values = len(values)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1926, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'clothes_order.contact_no_hashed' in 'field list'")
+"GET /clothes/my_order HTTP/1.1" 500 247953
+D:\individual project lll\E-commerce\assignment\online_shopping\clothes\models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /clothes/my_order HTTP/1.1" 302 0
+"GET /login?next=/clothes/my_order HTTP/1.1" 200 5897
+"POST /login?next=/clothes/my_order HTTP/1.1" 200 6128
+User nabin logged in.
+"POST /login?next=/clothes/my_order HTTP/1.1" 200 6175
+"GET /clothes/mycart HTTP/1.1" 200 5591
+"GET /clothes/my_order HTTP/1.1" 200 6079
+D:\individual project lll\E-commerce\assignment\online_shopping\clothes\models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /clothes/my_order HTTP/1.1" 302 0
+"GET /login?next=/clothes/my_order HTTP/1.1" 200 5897
+User nabin logged in.
+"POST /login?next=/clothes/my_order HTTP/1.1" 200 6175
+Internal Server Error: /clothes/my_order
+Traceback (most recent call last):
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'clothes_order.contact' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\accounts\auth.py", line 29, in wrapper_function
+    return view_function(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\clothes\views.py", line 292, in my_order
+    return render(request, 'clothes/my_order.html', context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\defaulttags.py", line 197, in render
+    len_values = len(values)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1926, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'clothes_order.contact' in 'field list'")
+"GET /clothes/my_order HTTP/1.1" 500 247371
+D:\individual project lll\E-commerce\assignment\online_shopping\clothes\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\individual project lll\E-commerce\assignment\online_shopping\clothes\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\individual project lll\E-commerce\assignment\online_shopping\clothes\models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 8167
+"GET /login HTTP/1.1" 200 5897
+User nabin logged in.
+"POST /login HTTP/1.1" 200 6175
+"GET /clothes/my_order HTTP/1.1" 200 6079
+"GET /clothes/my_order HTTP/1.1" 200 6079
+"GET /clothes/mycart HTTP/1.1" 200 5591
+"GET /clothes/my_order HTTP/1.1" 200 6079
+"GET /clothes/my_order HTTP/1.1" 200 6079
+"GET /clothes/my_order HTTP/1.1" 302 0
+"GET /login?next=/clothes/my_order HTTP/1.1" 200 5897
+"GET /static/css/style.css HTTP/1.1" 200 440
+"GET /static/css/navigation.css HTTP/1.1" 200 756
+"GET /login?next=/clothes/my_order HTTP/1.1" 200 5897
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2998
+"POST /login?next=/clothes/my_order HTTP/1.1" 200 6130
+"GET /login?next=/clothes/my_order HTTP/1.1" 200 5897
+"GET /clothes/my_order HTTP/1.1" 302 0
+"GET /login?next=/clothes/my_order HTTP/1.1" 200 5897
+"POST /login?next=/clothes/my_order HTTP/1.1" 200 6128
+User niraj logged in.
+"POST /login?next=/clothes/my_order HTTP/1.1" 302 0
+"GET /admins HTTP/1.1" 301 0
+"GET /admins/ HTTP/1.1" 200 6984
+"GET /clothes/order HTTP/1.1" 200 6093
+"GET /clothes/my_order HTTP/1.1" 302 0
+Not Found: /admins/dashboard
+"GET /admins/dashboard HTTP/1.1" 404 3740
+Not Found: /admins/dashboard
+"GET /admins/dashboard HTTP/1.1" 404 3740
+Not Found: /admins/dashboard
+"GET /admins/dashboard HTTP/1.1" 404 3740
+"GET /logout HTTP/1.1" 302 0
+"GET /login HTTP/1.1" 200 5897
+"GET /clothes/get_category HTTP/1.1" 302 0
+"GET /login?next=/clothes/get_category HTTP/1.1" 200 5897
+User nabin logged in.
+"POST /login?next=/clothes/get_category HTTP/1.1" 200 6175
+"GET /clothes/my_order HTTP/1.1" 200 6079
+"GET /clothes/my_order HTTP/1.1" 200 5580
+"GET /clothes/my_order HTTP/1.1" 200 5580
+"GET /clothes/my_order HTTP/1.1" 200 5580
+"GET /clothes/mycart HTTP/1.1" 200 5591
+"GET /clothes/order_form/1/6 HTTP/1.1" 200 6462
+Internal Server Error: /clothes/order_form/1/6
+Traceback (most recent call last):
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.DataError: (1406, "Data too long for column 'contact_no' at row 1")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\accounts\auth.py", line 29, in wrapper_function
+    return view_function(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\clothes\views.py", line 262, in order_form
+    order = Order.objects.create(clothe=clothe,
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 677, in create
+    obj.save(force_insert=True, using=self.db)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\clothes\models.py", line 101, in save
+    super().save(*args, **kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1845, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.DataError: (1406, "Data too long for column 'contact_no' at row 1")
+"POST /clothes/order_form/1/6 HTTP/1.1" 500 199242
+Internal Server Error: /clothes/order_form/1/6
+Traceback (most recent call last):
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.DataError: (1406, "Data too long for column 'contact_no' at row 1")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\accounts\auth.py", line 29, in wrapper_function
+    return view_function(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\clothes\views.py", line 262, in order_form
+    order = Order.objects.create(clothe=clothe,
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 677, in create
+    obj.save(force_insert=True, using=self.db)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\clothes\models.py", line 101, in save
+    super().save(*args, **kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1845, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.DataError: (1406, "Data too long for column 'contact_no' at row 1")
+"POST /clothes/order_form/1/6 HTTP/1.1" 500 199222
+D:\individual project lll\E-commerce\assignment\online_shopping\clothes\models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /clothes/order_form/1/6 HTTP/1.1" 302 0
+"GET /login?next=/clothes/order_form/1/6 HTTP/1.1" 200 5897
+User niraj logged in.
+"POST /login?next=/clothes/order_form/1/6 HTTP/1.1" 302 0
+"GET /admins HTTP/1.1" 301 0
+"GET /admins/ HTTP/1.1" 200 6984
+"GET /logout HTTP/1.1" 302 0
+"GET /login HTTP/1.1" 200 5897
+User nabin logged in.
+"POST /login HTTP/1.1" 200 6175
+"GET /clothes/my_order HTTP/1.1" 200 5580
+"GET /clothes/mycart HTTP/1.1" 200 5591
+"GET /clothes/order_form/1/6 HTTP/1.1" 200 6462
+Internal Server Error: /clothes/order_form/1/6
+Traceback (most recent call last):
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.DataError: (1406, "Data too long for column 'contact_no' at row 1")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\accounts\auth.py", line 29, in wrapper_function
+    return view_function(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\clothes\views.py", line 262, in order_form
+    order = Order.objects.create(clothe=clothe,
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 677, in create
+    obj.save(force_insert=True, using=self.db)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\clothes\models.py", line 101, in save
+    super().save(*args, **kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1845, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.DataError: (1406, "Data too long for column 'contact_no' at row 1")
+"POST /clothes/order_form/1/6 HTTP/1.1" 500 199222
+D:\individual project lll\E-commerce\assignment\online_shopping\clothes\models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /clothes/order_form/1/6 HTTP/1.1" 302 0
+"GET /login?next=/clothes/order_form/1/6 HTTP/1.1" 200 5897
+User niraj logged in.
+"POST /login?next=/clothes/order_form/1/6 HTTP/1.1" 302 0
+"GET /admins HTTP/1.1" 301 0
+"GET /admins/ HTTP/1.1" 200 6984
+"GET /logout HTTP/1.1" 302 0
+"GET /login HTTP/1.1" 200 5897
+User nabin logged in.
+"POST /login HTTP/1.1" 200 6175
+"GET /clothes/my_order HTTP/1.1" 200 5580
+"GET /clothes/mycart HTTP/1.1" 200 5591
+"GET /clothes/order_form/1/6 HTTP/1.1" 200 6462
+"POST /clothes/order_form/1/6 HTTP/1.1" 302 0
+"GET /clothes/my_order HTTP/1.1" 200 6281
+D:\individual project lll\E-commerce\assignment\online_shopping\clothes\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\individual project lll\E-commerce\assignment\online_shopping\clothes\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /clothes/my_order HTTP/1.1" 302 0
+"GET /login?next=/clothes/my_order HTTP/1.1" 200 5897
+User nabin logged in.
+"POST /login?next=/clothes/my_order HTTP/1.1" 200 6175
+"GET /clothes/my_order HTTP/1.1" 200 5580
+"GET /clothes/mycart HTTP/1.1" 200 5016
+"GET /clothes/get_clothe_user HTTP/1.1" 200 5210
+"GET /clothes/add_to_cart/1 HTTP/1.1" 302 0
+"GET /clothes/mycart HTTP/1.1" 200 5799
+"GET /clothes/order_form/1/8 HTTP/1.1" 200 6462
+Internal Server Error: /clothes/order_form/1/8
+Traceback (most recent call last):
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.DataError: (1406, "Data too long for column 'contact_no' at row 1")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\accounts\auth.py", line 29, in wrapper_function
+    return view_function(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\clothes\views.py", line 268, in order_form
+    order = Order.objects.create(
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 677, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1845, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.DataError: (1406, "Data too long for column 'contact_no' at row 1")
+"POST /clothes/order_form/1/8 HTTP/1.1" 500 195958
+D:\individual project lll\E-commerce\assignment\online_shopping\clothes\models.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /clothes/order_form/1/8 HTTP/1.1" 302 0
+"GET /login?next=/clothes/order_form/1/8 HTTP/1.1" 200 5897
+User nabin logged in.
+"POST /login?next=/clothes/order_form/1/8 HTTP/1.1" 200 6175
+"GET /clothes/my_order HTTP/1.1" 200 5580
+"GET /clothes/mycart HTTP/1.1" 200 5592
+"GET /clothes/order_form/1/8 HTTP/1.1" 200 6462
+Internal Server Error: /clothes/order_form/1/8
+Traceback (most recent call last):
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.DataError: (1406, "Data too long for column 'contact_no' at row 1")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\accounts\auth.py", line 29, in wrapper_function
+    return view_function(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\clothes\views.py", line 268, in order_form
+    order = Order.objects.create(
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 677, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1845, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.DataError: (1406, "Data too long for column 'contact_no' at row 1")
+"POST /clothes/order_form/1/8 HTTP/1.1" 500 195958
+D:\individual project lll\E-commerce\assignment\online_shopping\clothes\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /clothes/order_form/1/8 HTTP/1.1" 302 0
+"GET /login?next=/clothes/order_form/1/8 HTTP/1.1" 200 5897
+"POST /login?next=/clothes/order_form/1/8 HTTP/1.1" 200 6128
+User nabin logged in.
+"POST /login?next=/clothes/order_form/1/8 HTTP/1.1" 200 6175
+"GET /clothes/my_order HTTP/1.1" 200 5580
+"GET /clothes/mycart HTTP/1.1" 200 5592
+"GET /clothes/order_form/1/8 HTTP/1.1" 200 6462
+Internal Server Error: /clothes/order_form/1/8
+Traceback (most recent call last):
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\accounts\auth.py", line 29, in wrapper_function
+    return view_function(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\clothes\views.py", line 266, in order_form
+    hashed_contact_no = hashlib.sha256(contact_no).hexdigest()
+TypeError: Strings must be encoded before hashing
+"POST /clothes/order_form/1/8 HTTP/1.1" 500 79379
+D:\individual project lll\E-commerce\assignment\online_shopping\clothes\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /clothes/order_form/1/8 HTTP/1.1" 302 0
+"GET /login?next=/clothes/order_form/1/8 HTTP/1.1" 200 5897
+User nabin logged in.
+"POST /login?next=/clothes/order_form/1/8 HTTP/1.1" 200 6175
+"GET /clothes/mycart HTTP/1.1" 200 5592
+"GET /clothes/order_form/1/8 HTTP/1.1" 200 6462
+Internal Server Error: /clothes/order_form/1/8
+Traceback (most recent call last):
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.DataError: (1406, "Data too long for column 'contact_no' at row 1")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\accounts\auth.py", line 29, in wrapper_function
+    return view_function(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\clothes\views.py", line 269, in order_form
+    order = Order.objects.create(
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 677, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1845, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.DataError: (1406, "Data too long for column 'contact_no' at row 1")
+"POST /clothes/order_form/1/8 HTTP/1.1" 500 195938
+"POST /clothes/order_form/1/8 HTTP/1.1" 302 0
+"GET /login?next=/clothes/order_form/1/8 HTTP/1.1" 200 5897
+User nabin logged in.
+"POST /login?next=/clothes/order_form/1/8 HTTP/1.1" 200 6175
+"GET /clothes/mycart HTTP/1.1" 200 5592
+"GET /clothes/order_form/1/8 HTTP/1.1" 200 6462
+Internal Server Error: /clothes/order_form/1/8
+Traceback (most recent call last):
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\accounts\auth.py", line 29, in wrapper_function
+    return view_function(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\clothes\views.py", line 282, in order_form
+    return redirect('my_order')  # Assuming you have a 'my_order' URL pattern
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\shortcuts.py", line 179, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\urls\resolvers.py", line 848, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'my_order' not found. 'my_order' is not a valid view function or pattern name.
+"POST /clothes/order_form/1/8 HTTP/1.1" 500 98363
+D:\individual project lll\E-commerce\assignment\online_shopping\clothes\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /clothes/order_form/1/8
+Traceback (most recent call last):
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\accounts\auth.py", line 29, in wrapper_function
+    return view_function(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\clothes\views.py", line 254, in order_form
+    cart_item = Cart.objects.get(id=cart_id)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 647, in get
+    raise self.model.DoesNotExist(
+clothes.models.Cart.DoesNotExist: Cart matching query does not exist.
+"GET /clothes/order_form/1/8 HTTP/1.1" 500 85442
+"GET /clothes/mycart HTTP/1.1" 200 5217
+"GET /clothes/my_order HTTP/1.1" 302 0
+"GET /login?next=/clothes/my_order HTTP/1.1" 200 5897
+User nabin logged in.
+"POST /login?next=/clothes/my_order HTTP/1.1" 200 6175
+"GET /clothes/my_order HTTP/1.1" 200 6134
+D:\individual project lll\E-commerce\assignment\online_shopping\clothes\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /clothes/my_order HTTP/1.1" 302 0
+"GET /login?next=/clothes/my_order HTTP/1.1" 200 5897
+User nabin logged in.
+"POST /login?next=/clothes/my_order HTTP/1.1" 200 6175
+"GET /clothes/mycart HTTP/1.1" 200 5016
+"GET /clothes/my_order HTTP/1.1" 200 6134
+"GET /clothes/my_order HTTP/1.1" 200 6134
+"GET /clothes/my_order HTTP/1.1" 200 6134
+"GET /clothes/my_order HTTP/1.1" 200 6134
+"GET /clothes/my_order HTTP/1.1" 200 6134
+"GET /clothes/my_order HTTP/1.1" 200 6070
+"GET /clothes/my_order HTTP/1.1" 302 0
+"GET /login?next=/clothes/my_order HTTP/1.1" 200 5897
+User nabin logged in.
+"POST /login?next=/clothes/my_order HTTP/1.1" 200 6175
+"GET /clothes/my_order HTTP/1.1" 200 6070
+"GET /clothes/my_order HTTP/1.1" 200 6070
+"GET /clothes/my_order HTTP/1.1" 200 6070
+D:\individual project lll\E-commerce\assignment\online_shopping\clothes\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /clothes/my_order HTTP/1.1" 302 0
+"GET /login?next=/clothes/my_order HTTP/1.1" 200 5897
+User nabin logged in.
+"POST /login?next=/clothes/my_order HTTP/1.1" 200 6175
+"GET /clothes/mycart HTTP/1.1" 200 5016
+"GET /clothes/my_order HTTP/1.1" 200 6070
+"GET /clothes/my_order HTTP/1.1" 200 6070
+"GET /clothes/my_order HTTP/1.1" 200 6070
+"GET /clothes/my_order HTTP/1.1" 200 6070
+"GET /clothes/my_order HTTP/1.1" 200 6070
+"GET /clothes/my_order HTTP/1.1" 200 6070
+"GET /clothes/my_order HTTP/1.1" 200 6070
+"GET /clothes/my_order HTTP/1.1" 200 6070
+Internal Server Error: /clothes/order_form/1/6
+Traceback (most recent call last):
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\accounts\auth.py", line 29, in wrapper_function
+    return view_function(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\clothes\views.py", line 254, in order_form
+    cart_item = Cart.objects.get(id=cart_id)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 647, in get
+    raise self.model.DoesNotExist(
+clothes.models.Cart.DoesNotExist: Cart matching query does not exist.
+"GET /clothes/order_form/1/6 HTTP/1.1" 500 85336
+"GET /clothes/my_order HTTP/1.1" 200 6070
+"GET /clothes/my_order HTTP/1.1" 200 6070
+"GET /clothes/my_order HTTP/1.1" 200 6070
+"GET /clothes/my_order HTTP/1.1" 200 6070
+"GET /clothes/my_order HTTP/1.1" 200 6070
+"GET /clothes/get_clothe_user HTTP/1.1" 200 5210
+"GET /clothes/add_to_cart/1 HTTP/1.1" 302 0
+"GET /clothes/mycart HTTP/1.1" 200 5799
+Internal Server Error: /clothes/order_form/1/9
+Traceback (most recent call last):
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\accounts\auth.py", line 29, in wrapper_function
+    return view_function(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\clothes\views.py", line 289, in order_form
+    'original_contact_no': contact_no,
+UnboundLocalError: local variable 'contact_no' referenced before assignment
+"GET /clothes/order_form/1/9 HTTP/1.1" 500 77307
+"GET /clothes/my_order HTTP/1.1" 200 5580
+"GET /clothes/my_order HTTP/1.1" 200 5580
+"GET /clothes/my_order HTTP/1.1" 200 5580
+"GET /clothes/my_order HTTP/1.1" 200 5580
+"GET /clothes/my_order HTTP/1.1" 200 5580
+"GET /clothes/my_order HTTP/1.1" 200 5580
+"GET /clothes/my_order HTTP/1.1" 200 5580
+"GET /clothes/mycart HTTP/1.1" 200 5592
+Internal Server Error: /clothes/order_form/1/9
+Traceback (most recent call last):
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\accounts\auth.py", line 29, in wrapper_function
+    return view_function(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\clothes\views.py", line 289, in order_form
+    'original_contact_no': contact_no,
+UnboundLocalError: local variable 'contact_no' referenced before assignment
+"GET /clothes/order_form/1/9 HTTP/1.1" 500 77307
+D:\individual project lll\E-commerce\assignment\online_shopping\clothes\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /clothes/order_form/1/9 HTTP/1.1" 302 0
+"GET /login?next=/clothes/order_form/1/9 HTTP/1.1" 200 5897
+User nabin logged in.
+"POST /login?next=/clothes/order_form/1/9 HTTP/1.1" 200 6175
+"GET /clothes/my_order HTTP/1.1" 200 5580
+"GET /clothes/mycart HTTP/1.1" 200 5592
+Internal Server Error: /clothes/order_form/1/9
+Traceback (most recent call last):
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\accounts\auth.py", line 29, in wrapper_function
+    return view_function(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\clothes\views.py", line 289, in order_form
+    'original_contact_no': contact_no,
+UnboundLocalError: local variable 'contact_no' referenced before assignment
+"GET /clothes/order_form/1/9 HTTP/1.1" 500 77307
+D:\individual project lll\E-commerce\assignment\online_shopping\clothes\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /clothes/order_form/1/9 HTTP/1.1" 302 0
+"GET /login?next=/clothes/order_form/1/9 HTTP/1.1" 200 5897
+User nabin logged in.
+"POST /login?next=/clothes/order_form/1/9 HTTP/1.1" 200 6175
+"GET /clothes/mycart HTTP/1.1" 200 5592
+"GET /clothes/my_order HTTP/1.1" 200 5580
+"GET /clothes/mycart HTTP/1.1" 200 5592
+"GET /clothes/order_form/1/9 HTTP/1.1" 200 6462
+Internal Server Error: /clothes/order_form/1/9
+Traceback (most recent call last):
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\accounts\auth.py", line 29, in wrapper_function
+    return view_function(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\clothes\views.py", line 284, in order_form
+    return redirect('my_order')  # Assuming you have a 'my_order' URL pattern
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\shortcuts.py", line 179, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\urls\resolvers.py", line 848, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'my_order' not found. 'my_order' is not a valid view function or pattern name.
+"POST /clothes/order_form/1/9 HTTP/1.1" 500 98393
+D:\individual project lll\E-commerce\assignment\online_shopping\clothes\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /clothes/order_form/1/9
+Traceback (most recent call last):
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\accounts\auth.py", line 29, in wrapper_function
+    return view_function(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\clothes\views.py", line 254, in order_form
+    cart_item = Cart.objects.get(id=cart_id)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 647, in get
+    raise self.model.DoesNotExist(
+clothes.models.Cart.DoesNotExist: Cart matching query does not exist.
+"GET /clothes/order_form/1/9 HTTP/1.1" 500 85369
+"GET /clothes/mycart HTTP/1.1" 200 5217
+"GET /clothes/my_order HTTP/1.1" 200 6070
+"GET /clothes/my_order HTTP/1.1" 200 6070
+"GET /clothes/my_order HTTP/1.1" 200 6070
+"GET /clothes/mycart HTTP/1.1" 200 5016
+"GET /clothes/get_clothe_user HTTP/1.1" 200 5210
+"GET /clothes/add_to_cart/1 HTTP/1.1" 302 0
+"GET /clothes/mycart HTTP/1.1" 200 5801
+"GET /clothes/remove_cart_item/10 HTTP/1.1" 302 0
+"GET /clothes/mycart HTTP/1.1" 200 5235
+"GET /clothes/get_clothe_user HTTP/1.1" 200 5157
+"GET /clothes/add_to_cart/1 HTTP/1.1" 302 0
+"GET /login?next=/clothes/add_to_cart/1 HTTP/1.1" 200 5897
+User nabin logged in.
+"POST /login?next=/clothes/add_to_cart/1 HTTP/1.1" 200 6175
+"GET /clothes/mycart HTTP/1.1" 200 5016
+"GET /clothes/get_clothe_user HTTP/1.1" 200 5210
+"GET /clothes/add_to_cart/1 HTTP/1.1" 302 0
+"GET /clothes/mycart HTTP/1.1" 200 5801
+"GET /clothes/my_order HTTP/1.1" 200 6070
+"GET /clothes/mycart HTTP/1.1" 200 5594
+"GET /clothes/order_form/1/11 HTTP/1.1" 200 6462
+Internal Server Error: /clothes/order_form/1/11
+Traceback (most recent call last):
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\accounts\auth.py", line 29, in wrapper_function
+    return view_function(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\clothes\views.py", line 284, in order_form
+    return redirect('my_order')  # Assuming you have a 'my_order' URL pattern
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\shortcuts.py", line 179, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\urls\resolvers.py", line 848, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'my_order' not found. 'my_order' is not a valid view function or pattern name.
+"POST /clothes/order_form/1/11 HTTP/1.1" 500 98410
+D:\individual project lll\E-commerce\assignment\online_shopping\clothes\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\individual project lll\E-commerce\assignment\online_shopping\clothes\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /clothes/order_form/1/11 HTTP/1.1" 302 0
+"GET /login?next=/clothes/order_form/1/11 HTTP/1.1" 200 6098
+User nabin logged in.
+"POST /login?next=/clothes/order_form/1/11 HTTP/1.1" 200 6175
+"GET /clothes/mycart HTTP/1.1" 200 5016
+"GET /clothes/my_order HTTP/1.1" 301 0
+"GET /clothes/my_order/ HTTP/1.1" 200 6560
+"GET /clothes/get_clothe_user HTTP/1.1" 200 5210
+"GET /clothes/add_to_cart/1 HTTP/1.1" 302 0
+"GET /clothes/mycart HTTP/1.1" 200 5801
+"GET /clothes/order_form/1/12 HTTP/1.1" 200 6462
+Internal Server Error: /clothes/order_form/1/12
+Traceback (most recent call last):
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\accounts\auth.py", line 29, in wrapper_function
+    return view_function(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\clothes\views.py", line 284, in order_form
+    return redirect('my_order')  # Assuming you have a 'my_order' URL pattern
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\shortcuts.py", line 179, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\urls\resolvers.py", line 848, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'my_order' not found. 'my_order' is not a valid view function or pattern name.
+"POST /clothes/order_form/1/12 HTTP/1.1" 500 98416
+D:\individual project lll\E-commerce\assignment\online_shopping\clothes\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /clothes/order_form/1/12 HTTP/1.1" 302 0
+"GET /login?next=/clothes/order_form/1/12 HTTP/1.1" 200 6098
+User nabin logged in.
+"POST /login?next=/clothes/order_form/1/12 HTTP/1.1" 200 6175
+"GET /clothes/mycart HTTP/1.1" 200 5016
+"GET /clothes/get_clothe_user HTTP/1.1" 200 5210
+"GET /clothes/add_to_cart/1 HTTP/1.1" 302 0
+"GET /clothes/mycart HTTP/1.1" 200 5801
+"GET /clothes/my_order/ HTTP/1.1" 200 7054
+"GET /clothes/mycart HTTP/1.1" 200 5594
+"GET /clothes/remove_cart_item/13 HTTP/1.1" 302 0
+"GET /clothes/mycart HTTP/1.1" 200 5235
+"GET /clothes/get_clothe_user HTTP/1.1" 200 5210
+"GET /clothes/add_to_cart/1 HTTP/1.1" 302 0
+"GET /clothes/mycart HTTP/1.1" 200 5801
+"GET /clothes/my_order/ HTTP/1.1" 200 7054
+"GET /clothes/mycart HTTP/1.1" 200 5594
+"GET /clothes/order_form/1/14 HTTP/1.1" 200 6462
+Internal Server Error: /clothes/order_form/1/14
+Traceback (most recent call last):
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\accounts\auth.py", line 29, in wrapper_function
+    return view_function(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\clothes\views.py", line 284, in order_form
+    return redirect('my_order')  # Assuming you have a 'my_order' URL pattern
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\shortcuts.py", line 179, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\urls\resolvers.py", line 848, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'my_order' not found. 'my_order' is not a valid view function or pattern name.
+"POST /clothes/order_form/1/14 HTTP/1.1" 500 98410
+"GET /clothes/my_order HTTP/1.1" 301 0
+"GET /clothes/my_order/ HTTP/1.1" 302 0
+"GET /login?next=/clothes/my_order/ HTTP/1.1" 200 6098
+D:\individual project lll\E-commerce\assignment\online_shopping\clothes\views.py changed, reloading.
+Watching for file changes with StatReloader
+User nabin logged in.
+"POST /login?next=/clothes/my_order/ HTTP/1.1" 200 6175
+"GET /clothes/mycart HTTP/1.1" 200 5016
+"GET /clothes/get_clothe_user HTTP/1.1" 200 5210
+"GET /clothes/add_to_cart/1 HTTP/1.1" 302 0
+"GET /clothes/mycart HTTP/1.1" 200 5801
+"GET /clothes/order_form/1/15 HTTP/1.1" 200 6462
+Internal Server Error: /clothes/order_form/1/15
+Traceback (most recent call last):
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\accounts\auth.py", line 29, in wrapper_function
+    return view_function(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\clothes\views.py", line 281, in order_form
+    return redirect('my_order')  # Assuming you have a 'my_order' URL pattern
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\shortcuts.py", line 179, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\urls\resolvers.py", line 848, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'my_order' not found. 'my_order' is not a valid view function or pattern name.
+"POST /clothes/order_form/1/15 HTTP/1.1" 500 98380
+D:\individual project lll\E-commerce\assignment\online_shopping\clothes\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /clothes/order_form/1/15 HTTP/1.1" 302 0
+"GET /login?next=/clothes/order_form/1/15 HTTP/1.1" 200 6098
+User nabin logged in.
+"POST /login?next=/clothes/order_form/1/15 HTTP/1.1" 200 6175
+"GET /clothes/mycart HTTP/1.1" 200 5016
+"GET /clothes/my_order/ HTTP/1.1" 200 6070
+"GET /clothes/my_order/ HTTP/1.1" 200 6070
+"GET /clothes/mycart HTTP/1.1" 200 5016
+"GET /clothes/get_clothe_user HTTP/1.1" 200 5210
+"GET /clothes/add_to_cart/1 HTTP/1.1" 302 0
+"GET /clothes/mycart HTTP/1.1" 200 5801
+"GET /clothes/order_form/1/16 HTTP/1.1" 200 6462
+"POST /clothes/order_form/1/16 HTTP/1.1" 302 0
+Not Found: /clothes/order_form/1/clothes/my_order.html
+"GET /clothes/order_form/1/clothes/my_order.html HTTP/1.1" 404 6730
+D:\individual project lll\E-commerce\assignment\online_shopping\clothes\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /clothes/order_form/1/16 HTTP/1.1" 302 0
+"GET /login?next=/clothes/order_form/1/16 HTTP/1.1" 200 6098
+User nabin logged in.
+"POST /login?next=/clothes/order_form/1/16 HTTP/1.1" 200 6175
+"GET /clothes/mycart HTTP/1.1" 200 5016
+"GET /clothes/my_order/ HTTP/1.1" 200 6560
+"GET /clothes/mycart HTTP/1.1" 200 5016
+"GET /clothes/get_clothe_user HTTP/1.1" 200 5210
+"GET /clothes/add_to_cart/1 HTTP/1.1" 302 0
+"GET /clothes/mycart HTTP/1.1" 200 5801
+"GET /clothes/order_form/1/17 HTTP/1.1" 200 6462
+"POST /clothes/order_form/1/17 HTTP/1.1" 302 0
+Not Found: /clothes/order_form/1/clothes/my_order.html
+"GET /clothes/order_form/1/clothes/my_order.html HTTP/1.1" 404 6730
+D:\individual project lll\E-commerce\assignment\online_shopping\clothes\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /clothes/order_form/1/17
+Traceback (most recent call last):
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\accounts\auth.py", line 29, in wrapper_function
+    return view_function(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\clothes\views.py", line 254, in order_form
+    cart_item = Cart.objects.get(id=cart_id)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 647, in get
+    raise self.model.DoesNotExist(
+clothes.models.Cart.DoesNotExist: Cart matching query does not exist.
+"GET /clothes/order_form/1/17 HTTP/1.1" 500 85460
+"GET /clothes/mycart HTTP/1.1" 200 5217
+"GET /clothes/get_clothe_user HTTP/1.1" 200 5210
+"GET /clothes/mycart HTTP/1.1" 200 5016
+"GET /clothes/get_clothe_user HTTP/1.1" 200 5210
+"GET /clothes/add_to_cart/1 HTTP/1.1" 302 0
+"GET /clothes/mycart HTTP/1.1" 200 5801
+"GET /clothes/order_form/1/18 HTTP/1.1" 302 0
+"GET /login?next=/clothes/order_form/1/18 HTTP/1.1" 200 5897
+User niraj logged in.
+"POST /login?next=/clothes/order_form/1/18 HTTP/1.1" 302 0
+"GET /admins HTTP/1.1" 301 0
+"GET /admins/ HTTP/1.1" 200 6984
+"GET /logout HTTP/1.1" 302 0
+"GET /login HTTP/1.1" 200 5897
+"GET /login HTTP/1.1" 200 5897
+User nabin logged in.
+"POST /login HTTP/1.1" 200 6175
+"GET /clothes/get_clothe_user HTTP/1.1" 200 5210
+"GET /clothes/my_order/ HTTP/1.1" 200 7050
+"GET /clothes/mycart HTTP/1.1" 200 5594
+"GET /clothes/order_form/1/18 HTTP/1.1" 200 6462
+"POST /clothes/order_form/1/18 HTTP/1.1" 302 0
+Not Found: /clothes/order_form/1/clothes/my_order.html
+"GET /clothes/order_form/1/clothes/my_order.html HTTP/1.1" 404 6730
+D:\individual project lll\E-commerce\assignment\online_shopping\clothes\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /clothes/order_form/1/18
+Traceback (most recent call last):
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\accounts\auth.py", line 29, in wrapper_function
+    return view_function(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\clothes\views.py", line 254, in order_form
+    cart_item = Cart.objects.get(id=cart_id)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 647, in get
+    raise self.model.DoesNotExist(
+clothes.models.Cart.DoesNotExist: Cart matching query does not exist.
+"GET /clothes/order_form/1/18 HTTP/1.1" 500 85460
+"GET /clothes/mycart HTTP/1.1" 200 5217
+"GET /clothes/get_clothe_user HTTP/1.1" 200 5210
+"GET /clothes/add_to_cart/1 HTTP/1.1" 302 0
+"GET /clothes/mycart HTTP/1.1" 200 5801
+"GET /clothes/order_form/1/19 HTTP/1.1" 200 6462
+"POST /clothes/order_form/1/19 HTTP/1.1" 302 0
+Not Found: /clothes/order_form/1/clothes/my_order.html
+"GET /clothes/order_form/1/clothes/my_order.html HTTP/1.1" 404 6729
+D:\individual project lll\E-commerce\assignment\online_shopping\clothes\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /clothes/order_form/1/clothes/my_order.html
+"GET /clothes/order_form/1/clothes/my_order.html HTTP/1.1" 404 6566
+"GET /clothes/order_form/1/19 HTTP/1.1" 302 0
+"GET /login?next=/clothes/order_form/1/19 HTTP/1.1" 200 6098
+User nabin logged in.
+"POST /login?next=/clothes/order_form/1/19 HTTP/1.1" 200 6175
+"GET /clothes/mycart HTTP/1.1" 200 5016
+"GET /clothes/get_clothe_user HTTP/1.1" 200 5210
+"GET /clothes/add_to_cart/1 HTTP/1.1" 302 0
+"GET /clothes/mycart HTTP/1.1" 200 5801
+"GET /clothes/remove_cart_item/20 HTTP/1.1" 302 0
+"GET /clothes/mycart HTTP/1.1" 200 5235
+"GET /clothes/get_clothe_user HTTP/1.1" 200 5210
+"GET /clothes/add_to_cart/1 HTTP/1.1" 302 0
+"GET /clothes/mycart HTTP/1.1" 200 5801
+"GET /clothes/order_form/1/21 HTTP/1.1" 200 6462
+"POST /clothes/order_form/1/21 HTTP/1.1" 302 0
+Not Found: /clothes/order_form/1/clothes/my_order.html
+"GET /clothes/order_form/1/clothes/my_order.html HTTP/1.1" 404 6566
+D:\individual project lll\E-commerce\assignment\online_shopping\clothes\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /clothes/order_form/1/21
+Traceback (most recent call last):
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\accounts\auth.py", line 29, in wrapper_function
+    return view_function(request, *args, **kwargs)
+  File "D:\individual project lll\E-commerce\assignment\online_shopping\clothes\views.py", line 254, in order_form
+    cart_item = Cart.objects.get(id=cart_id)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\niraj\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 647, in get
+    raise self.model.DoesNotExist(
+clothes.models.Cart.DoesNotExist: Cart matching query does not exist.
+"POST /clothes/order_form/1/21 HTTP/1.1" 500 86724
+D:\individual project lll\E-commerce\assignment\online_shopping\clothes\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /clothes/order_form/1/21 HTTP/1.1" 302 0
+"GET /login?next=/clothes/order_form/1/21 HTTP/1.1" 200 6098
+User nabin logged in.
+"POST /login?next=/clothes/order_form/1/21 HTTP/1.1" 200 6175
+"GET /clothes/mycart HTTP/1.1" 200 5016
+"GET /clothes/get_clothe_user HTTP/1.1" 200 5210
+"GET /clothes/add_to_cart/1 HTTP/1.1" 302 0
+"GET /clothes/mycart HTTP/1.1" 200 5801
+"GET /clothes/order_form/1/22 HTTP/1.1" 200 6462
+"POST /clothes/order_form/1/22 HTTP/1.1" 302 0
+"GET /clothes/my_order HTTP/1.1" 200 6761
+"GET /clothes/my_order HTTP/1.1" 200 6541
+"GET /clothes/my_order HTTP/1.1" 200 6523
+"GET /clothes/mycart HTTP/1.1" 302 0
+"GET /login?next=/clothes/mycart HTTP/1.1" 200 5897
+"GET /login?next=/clothes/mycart HTTP/1.1" 200 5897
+"GET /login?next=/clothes/mycart HTTP/1.1" 200 5897
+"GET /login?next=/clothes/mycart HTTP/1.1" 200 5897
+"GET /login?next=/clothes/mycart HTTP/1.1" 200 5897
+"GET / HTTP/1.1" 200 8167
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 8167
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 8167
+"GET /login HTTP/1.1" 200 5897
+User niraj logged in.
+"POST /login HTTP/1.1" 302 0
+"GET /admins HTTP/1.1" 301 0
+"GET /admins/ HTTP/1.1" 200 6984
+"GET /logout HTTP/1.1" 302 0
+"GET /login HTTP/1.1" 200 5897
+User nabin logged in.
+"POST /login HTTP/1.1" 200 6175
+"GET /clothes/get_clothe_user HTTP/1.1" 200 5210
+"GET /clothes/mycart HTTP/1.1" 200 5016
+"GET /clothes/my_order HTTP/1.1" 200 6523
+"GET /clothes/about HTTP/1.1" 200 8093
+"GET /static/imagess/puma.png HTTP/1.1" 404 1807
+"GET /static/imagess/ad.png HTTP/1.1" 404 1801
+"GET /static/image/nike.png HTTP/1.1" 404 1801
+"GET /clothes/about HTTP/1.1" 200 8046
+"GET /static/imagess/puma.png HTTP/1.1" 404 1807
+"GET /static/imagess/ad.png HTTP/1.1" 404 1801
+"GET /static/image/nike.png HTTP/1.1" 404 1801
+code 400, message Bad request version ('õë¤)\\\x8e\x0eN×êJ')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+code 400, message Bad request version ('\x00\x02\x01\x00\x00')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+code 400, message Bad request version ('\x1af\x00')
+code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\x12\x00\x00\x00\x17\x00\x00\x003\x00+\x00)')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+code 400, message Bad request version ('\x00\x02\x01\x00\x00')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+code 400, message Bad request version ('ÿÓ.S\x10§/(õÍ±&\x19è\x80~]n¢à²\x9c¸7Ø')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+code 400, message Bad request version ('xb\x14')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+code 400, message Bad request version ('¿ú\x0f¶9\x00A~PËØx^ØÊô\x87Íê\x9f"£\x90UufUÓ\x18Oq\x06\x86ëý\x9eæá¦!&')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+code 400, message Bad request version ('\x02h2\x08http/1.1\x00')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+code 400, message Bad request version ('íü\x93¶;\x9f\x03ÿ0lÜuQ%W\x02\x0f+%F\x00\x1b\x00\x03\x02\x00\x02\x00')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+code 400, message Bad request version ('ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+code 400, message Bad request version ('ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+"GET / HTTP/1.1" 200 8167
+"GET / HTTP/1.1" 200 8167
+"GET / HTTP/1.1" 200 8167
+"GET / HTTP/1.1" 200 8167
+"GET / HTTP/1.1" 200 8167
+"GET / HTTP/1.1" 200 8167
+"GET /login?next=/clothes/my_order HTTP/1.1" 200 5897
+"GET / HTTP/1.1" 200 8167
+"GET / HTTP/1.1" 200 8167
+"GET /static/images/offer2.jpg HTTP/1.1" 200 860989
+"GET /static/images/offer.PNG HTTP/1.1" 200 2453222
+"GET /static/images/sw.jpg HTTP/1.1" 200 91750
+"GET /static/images/golf.jpg HTTP/1.1" 200 52642
+"GET /static/images/cr.jpg HTTP/1.1" 200 170809
+"GET /static/images/offer1.PNG HTTP/1.1" 200 1099658
+code 400, message Bad request version ('\x00\x02\x01\x00\x00')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01Di\x00\x05\x00\x03\x02h2\x00')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+code 400, message Bad request version ("g¼\x11@ð\x90\x93'Nk)=,\x9a\x90\x890Ò\x90¢\x86¬JZH\x8cãZ\x00")
+You're accessing the development server over HTTPS, but it only supports HTTP.
+code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\x08Ë¾ª^Êë\x88]')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+code 400, message Bad request version ('ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01Í')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+code 400, message Bad request version ('$\x0e\x9fq&ýËp@u^ò¸j\x9dÙ*©\x87ãZâ\x8a£\x8a\x1b.{\x8b"Á<\x00')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+code 400, message Bad request syntax ('\x16\x03\x01\x02\x1a\x01\x00\x02\x16\x03\x03Ì\x9aïH\x95fc^%\x91\x9azqßÛ,')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+code 400, message Bad request version ('Ë\x18×\x8aº>kÂüD\x1b\x19\x9be\x00ÐÆæý\x08')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+code 400, message Bad request version ("¾$+_ö9Ã\x02Ðªß\x00(\x13\x02\x13\x01À,À+À0À/À$À#À(À'À")
+You're accessing the development server over HTTPS, but it only supports HTTP.
+code 400, message Bad request syntax ("\x16\x03\x03\x00©\x01\x00\x00¥\x03\x03eÉ%×\x90fCú+(Æ63\x86¸në\x17Fç\x1b\x8d\x8aÉììïVRâ?¯\x00\x00$À,À+À0À/À$À#À(À'À")
+You're accessing the development server over HTTPS, but it only supports HTTP.
+- Broken pipe from ('127.0.0.1', 64536)
